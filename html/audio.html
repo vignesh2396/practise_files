@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<!-- Html and javascript code for embed audio file -->
+
+	<!-- Program 1: <br/>
+	<audio autoplay="" controls="" id="audiofile" preload="auto">
+		<source src="../audio/audio.mp3" type="audio/mp3">
+	</audio><br/>
+	<button type="button" onclick="play()">Play|Pause</button>
+
+	<script type="text/javascript">
+		var audio = document.getElementById('audiofile');
+		audio.volume = 0.4;
+
+		function play(){
+			var music = document.getElementById('audiofile');
+			if (music.paused) {
+				music.play();
+			}
+			else{
+				music.pause();
+			}
+		}
+
+	</script> -->
+
+
+	<!-- JavaScript code for embed audio file -->
+
+	<!-- Program 2: <br/>
+<button type="button" onclick="play()">Play|Pause</button>
+
+	<script type="text/javascript">
+		var audio = new Audio('../audio/audio.mp3');
+		audio.volume = 0.6;
+		audio.pause();
+		function play(){			
+			if (audio.paused) {
+				audio.play();
+			}
+			else{
+				audio.pause();
+			}
+		}
+	</script> -->
+
+	<!-- JavaScript code -->
+
+	<audio id="audiofile" preload="auto">
+		<source src="../audio/audio.mp3" type="audio/mp3">
+	</audio><br />
+	<button type="button" id="play">Play</button>
+	<button type="button" id="pause">Pause</button>
+	<label>Volume:</label>
+	<input type="range" name="volume" id="volume" min="0" max="10">
+	<button type="button" id="duration"></button>
+
+	<script type="text/javascript">
+
+		var audio = document.getElementById('audiofile');
+
+		var play_audio = document.getElementById('play');
+		play_audio.addEventListener('click', function () { audio.play(); }, false);
+
+		var pause_audio = document.getElementById('pause');
+		pause_audio.addEventListener('click', function () { audio.pause(); }, false);
+
+		var volume_control = document.getElementById('volume');
+		volume_control.addEventListener('change', function () { audio.volume = parseFloat(this.value / 10); })
+
+		audio.addEventListener('timeupdate', function () {
+			var TimeElapsed = document.getElementById('duration');
+			var seconds = parseInt(audio.currentTime % 60);
+			var minutes = parseInt((audio.currentTime / 60) % 60);
+			TimeElapsed.innerHTML = minutes + '.' + seconds + 'sec';
+		}, false);
+
+	</script>
+
+
+</body>
+
+</html>

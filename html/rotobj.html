@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating object using css</title>
+</head>
+<style>
+    #div1 {
+        /*font-family:Arial, Helvetica, sans-serif;
+        font-size: large;
+        color: blue;
+        height: 150px;
+        width: 150px;
+        border: 1px solid red;
+        background-color: gold;
+        text-align: center;
+        line-height: 150px;*/
+        top: 100px;
+        position: absolute;
+        animation: mymove 3s;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    @keyframes mymove {
+        0% {
+            left: 0px;
+            top: 0px;
+            border: 10px solid tomato;
+            transform: rotate(0deg);
+        }
+
+        25% {
+            left: 100px;
+            top: 200px;
+            border: 10px solid turquoise;
+            transform: rotate(45deg);
+        }
+
+        50% {
+            left: 200px;
+            top: 300px;
+            border: 10px solid greenyellow;
+            transform: rotate(90deg);
+        }
+
+        75% {
+            left: 300px;
+            top: 400px;
+            border: 10px solid yellow;
+            transform: rotate(180deg);
+        }
+
+        100% {
+            left: 400px;
+            top: 500px;
+            border: 10px solid goldenrod;
+            transform: rotate(360deg);
+        }
+
+    }
+</style>
+
+<body>
+    <div id="div1"><img src="images/pic.jpg" alt="picuture"></div>
+</body>
+
+</html>

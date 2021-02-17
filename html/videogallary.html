@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video gallary</title>
+	<style type="text/css">
+		div.gallary{
+			width: 600px;
+			height: 400px;
+			margin: 5px;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 4px 5px rgb(0,0,100);
+
+		}
+	</style>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+	<div class="gallary">
+		<video width="600" height="300">
+			<source src="../video/v1.mp4" type="video/mp4">
+		</video>
+		<div class="text">video 1</div>
+		<div id="videoControls">
+			<div id="seekBar"><button id="viewSeek" onmouseenter="seekBar()"></button></div>
+			<button id="Play_Pause" onclick="togglePlay_Pause()">play>></button>
+			<button id="Stop_Button" onclick="StopVideo()">Stop</button>
+			<button id="rewind_Video" onclick="ManipulatePlaySpeed('-');" >«</button>
+			<button id="fastForward" onclick="ManipulatePlaySpeed('+');" >»</button>
+			<button id="decreaseVolume" onclick="AlterVolume('-')">-</button>
+			<button id="volumeUp" onclick="AlterVolume('+')">+</button>
+			<button id="mute" onclick="ToggleMute_UnMute()">mute</button>
+		</div>
+	</div>
+
+	<div class="gallary">
+		<video width="600" height="300">
+			<source src="../video/v2.mp4" type="video/mp4">
+		</video>
+		<div class="text">video 2</div>
+		<div id="videoControls">
+			<div id="seekBar"><button id="viewSeek" onmouseenter="seekBar()"></button></div>
+			<button id="Play_Pause" onclick="togglePlay_Pause()">play>></button>
+			<button id="Stop_Button" onclick="StopVideo()">Stop</button>
+			<button id="rewind_Video" onclick="ManipulatePlaySpeed('-');" >«</button>
+			<button id="fastForward" onclick="ManipulatePlaySpeed('+');" >»</button>
+			<button id="decreaseVolume" onclick="AlterVolume('-')">-</button>
+			<button id="volumeUp" onclick="AlterVolume('+')">+</button>
+			<button id="mute" onclick="ToggleMute_UnMute()">mute</button>
+		</div>
+	</div>
+
+	<div class="gallary">
+		<video width="600" height="300">
+			<source src="../video/v3.mp4" type="video/mp4">
+		</video>
+		<div class="text">video 3</div>
+		<div id="videoControls">
+			<div id="seekBar"><button id="viewSeek" onmouseenter="seekBar()"></button></div>
+			<button id="Play_Pause" onclick="togglePlay_Pause()">play>></button>
+			<button id="Stop_Button" onclick="StopVideo()">Stop</button>
+			<button id="rewind_Video" onclick="ManipulatePlaySpeed('-');" >«</button>
+			<button id="fastForward" onclick="ManipulatePlaySpeed('+');" >»</button>
+			<button id="decreaseVolume" onclick="AlterVolume('-')">-</button>
+			<button id="volumeUp" onclick="AlterVolume('+')">+</button>
+			<button id="mute" onclick="ToggleMute_UnMute()">mute</button>
+		</div>
+	</div>
+
+	<div class="gallary">
+		<video width="600" height="300">
+			<source src="../video/v4.mp4" type="video/mp4">
+		</video>
+		<div class="text">video 4</div>
+		<div id="videoControls">
+			<div id="seekBar"><button id="viewSeek" onmouseenter="seekBar()"></button></div>
+			<button id="Play_Pause" onclick="togglePlay_Pause()">play>></button>
+			<button id="Stop_Button" onclick="StopVideo()">Stop</button>
+			<button id="rewind_Video" onclick="ManipulatePlaySpeed('-');" >«</button>
+			<button id="fastForward" onclick="ManipulatePlaySpeed('+');" >»</button>
+			<button id="decreaseVolume" onclick="AlterVolume('-')">-</button>
+			<button id="volumeUp" onclick="AlterVolume('+')">+</button>
+			<button id="mute" onclick="ToggleMute_UnMute()">mute</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/home/vignesh/Documents/practise files/javascript/video.js"></script>
+
+</body>
+</html>

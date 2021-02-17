@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glassmorphsim</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <style>
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+    }
+body::before{
+    content : "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 90%);
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path:circle(20% at 10% 10%);
+    
+}
+.container{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index:1;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+.container .card .content{
+    padding:20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity:1;
+
+}
+.container .card .content h2{
+    position: absolute;
+    top: -35px;
+    left: 30px;
+    font-size: 8rem;
+    color: rgba(255,255,255,0.15);
+    pointer-events: none;
+}
+.container .card .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+    padding-top: 2rem;
+
+} 
+.container .card .content p{
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 300;
+} 
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 12px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+} 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore impedit dolore inventore nesciunt laudantium, dolorem iure odio aliquam temporibus deserunt veniam sit eos nihil eaque dolores recusandae perspiciatis voluptatum similique?</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt culpa corrupti sapiente quisquam nulla sed quis libero eius, sequi repudiandae iste? Minima temporibus molestias maiores explicabo, autem ratione vitae!</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt culpa corrupti sapiente quisquam nulla sed quis libero eius, sequi repudiandae iste? Minima temporibus molestias maiores explicabo, autem ratione vitae!</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+        max:25, 
+        speed: 400,
+        glare: true,
+        "max-glare" : 1
+    });
+    </script>
+</body>
+</html>

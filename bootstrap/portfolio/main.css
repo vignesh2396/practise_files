@@ -1,0 +1,25 @@
+/* navigation bar */
+/* .navbar{background:#F97300;} */
+.bg-dark{background:#343a40;}
+.nav-link, .navbar-brand {color:#f4f4f4; cursor: pointer;}
+.nav-link{margin-right: 1em;}
+.nav-link:hover{background:#f4f4f4; color:#F97300;}
+.navbar-collapse{justify-content: flex-end;} /* to place the navbar menu on the right we need to add a justify-content property and set it to flex-end. */
+.navbar-toggler{background: #fff;}
+
+/* header */
+.header{
+    background-image: url('D:/Sync_files/practise files/bootstrap/portfolio/download.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* header --> overlay(background) */
+.overlay{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    background: #cccccc;
+}

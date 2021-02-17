@@ -1,0 +1,30 @@
+.title-text{
+    font:normal bold 50px/72px var(--roboto);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* buttons */
+.button{
+    padding: .8rem 2.2rem;
+    font:normal 200 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 15px;
+}
+
+.button.btn-primary{
+background: var(--gradient-color);
+background-clip: padding-box;
+color: whitesmoke;
+}
+
+.btn-primary:hover{
+    color: #fff;
+  background-color: var(--gradient-color);
+  border-color: var(--gradient-color);
+  /* transition: background .6s ease; */
+  /* box-shadow: var(--box-shadow); */
+}
