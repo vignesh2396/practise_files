@@ -20,6 +20,6 @@ cartoon = cv2.bitwise_and(color, color, mask = edges)
 # cv2.imshow("Cartoon", cartoon)
 
 #save
-cv2.imwrite("cartoon.jpg", cartoon)
+cv2.imwrite("group_face.jpg", cartoon)
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
