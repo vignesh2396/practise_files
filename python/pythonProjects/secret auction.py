@@ -1,4 +1,4 @@
-import replit
+import os
 
 logo = '''
                          ___________
@@ -38,4 +38,4 @@ while not bidding_finished:
     bidding_finished = True
     find_highest_bidder(bids)
   elif should_continue == "yes":
-    replit.clear()
+    os.system('clear')

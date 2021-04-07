@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Bootstrap registration form</title>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body m-4">
+                        <form action="#" method="post">
+
+                            <!-- ------------------------- FULL NAME ----------------------------->
+                            <div class="form-group mb-2 ml-2">
+                                <label for="inputfullname" class="col-sm-12 control-label">fullname:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="fullname" id="inputfullname" class="form-control" value=""
+                                        required="required" placeholder="Enter your full name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-sm-6">
+                                    <!-- ------------------------- MOBILE ----------------------------->
+                                    <div class="form-group">
+                                        <label for="inputmobile" class="col-sm-12 control-label">mobile:</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" name="mobile" id="inputmobile" class="form-control"
+                                                max="13" required placeholder="+919876543210"
+                                                aria-describedby="phoneHelp">
+
+                                            <small id="phoneHelp" class="form-text text-muted">We won't share your
+                                                number.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- ------------------------- EMAIL ----------------------------->
+                                    <div class="form-group">
+                                        <label for="inputemail" class="col-sm-12 control-label">email:</label>
+                                        <div class="col-sm-10">
+
+                                            <input type="email" name="email" id="inputemail" class="form-control"
+                                                required placeholder="google@gmail.com" aria-describedby="phoneHelp">
+
+                                            <small id="emailHelp" class="form-text text-muted">We won't share your
+                                                email.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 mb-2">
+                                    <!-- ------------------------- PASSWORD ----------------------------->
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="col-sm-12 control-label">Password:</label>
+                                        <div class="col-sm-10">
+
+                                            <input type="password" name="Password" id="inputPassword"
+                                                class="form-control" required="required" placeholder="Password">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- ------------------------- CONFIRM PASSWORD ----------------------------->
+                                    <div class="form-group">
+                                        <label for="inputConfirmpassword" class="col-sm-12 control-label">Confirm
+                                            password:</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" name="Confirmpassword" id="inputConfirmpassword"
+                                                class="form-control" required="required" placeholder="Confirm password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ------------------- CHECK BOX FOR TERMS AND CONDITION --------------------->
+                            <div class="checkbox form-group text-center mb-2">
+                                <label>
+                                    <input type="checkbox">
+                                    I agree all the terms and conditions
+                                </label>
+                            </div>
+
+                            <!-- ------------------------- BUTTONS ----------------------------->
+                            <div class="form-group text-center">
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
