@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display       : flex;
+    flex-direction: column;
+    /* padding    : 20px; */
+}
+
+.box {
+    height   : 10vh;
+    border   : 2px solid tomato;
+    font-size: 64px;
+    width    : 200px;
+    height   : auto;
+    margin   : 2rem;
+    padding  : 0 3px;
+    position : relative;
+    left     : 40%;
+}
+
+#box1 {
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}
+
+#box2 {
+    overflow: hidden;
+}
+
+#box3 {
+    word-break: break-all;
+}
+
+#box4 {
+    overflow-x: auto;
+}
