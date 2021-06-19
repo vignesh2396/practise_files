@@ -1,8 +1,8 @@
-console.log(module) // built in module
+console.log(module); // built in module
 
-const path = require('path')
-var pathObj = path.parse(__filename)
-console.log(pathObj)
+const path = require("path");
+var pathObj = path.parse(__filename);
+console.log(pathObj);
 
 // ------ Global objects ------
 
@@ -14,6 +14,6 @@ console.log(pathObj)
 // setTimeout()
 // clearTimeout()
 
-const log = require('./logger');
+const log = require("./logger");
 console.log(log);
-log('vignesh');
+log("vignesh");

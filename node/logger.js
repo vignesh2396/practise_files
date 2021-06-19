@@ -1,6 +1,6 @@
-var url = 'http://www.google.com';
+var url = "http://www.google.com";
 
-function log(message){
+function log(message) {
     console.log(message);
 }
 
@@ -8,4 +8,4 @@ function log(message){
 
 // If we are having only single function in our module then,
 // we can directly give
-module.exports = log; 
+module.exports = log;
